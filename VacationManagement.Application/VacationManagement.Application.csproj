@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VacationManagement.Domain\VacationManagement.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\VacationAllocation\Handler\Commands\" />
+    <Folder Include="Features\VacationAllocation\Requests\Commands\" />
+    <Folder Include="Features\VacationRequests\Handler\Commands\" />
+    <Folder Include="Features\VacationRequests\Requests\Commands\" />
+    <Folder Include="Features\VacationTypes\Handler\Commands\" />
+    <Folder Include="Features\VacationTypes\Requests\Commands\" />
+  </ItemGroup>
+
+</Project>
