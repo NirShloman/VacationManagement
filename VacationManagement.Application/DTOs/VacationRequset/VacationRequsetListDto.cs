@@ -9,7 +9,7 @@ namespace VacationManagement.Application.DTOs.VacationRequset
 {
     public class VacationRequsetListDto : BaseDto
     {
-        public VacationTypeDto LeaveType { get; set; }
+        public VacationTypeDto VacationType { get; set; }
         public DateTime DateRequested { get; set; }
         public bool? Approved { get; set; }
     }

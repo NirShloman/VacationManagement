@@ -24,7 +24,7 @@ namespace VacationManagement.Application.Features.VacationAllocation.Handler.Que
 
         public async Task<VacationAllocationDto> Handle(GetVacationAllocationDetailsRequest request, CancellationToken cancellationToken)
         {
-            var vacationType = _vacationAllocationRepository.GetVacationAllocationWithDetails(request.Id);
+            var vacationType = await _vacationAllocationRepository.GetVacationAllocationWithDetails(request.Id);
             return _mapper.Map<VacationAllocationDto>(vacationType);
         }
     }

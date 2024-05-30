@@ -25,7 +25,7 @@ namespace VacationManagement.Application.Features.VacationRequests.Handler.Queri
 
         public async Task<VacationRequestDto> Handle(GetVacationRequestsDetailsRequest request, CancellationToken cancellationToken)
         {
-            var vacationType = _vacationRequestRepository.GetVacationRequsetWithDetails(request.Id);
+            var vacationType = await _vacationRequestRepository.GetVacationRequsetWithDetails(request.Id);
             return _mapper.Map<VacationRequestDto>(vacationType);
         }
     }
