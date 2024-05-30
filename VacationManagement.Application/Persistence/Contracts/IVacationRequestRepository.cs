@@ -11,5 +11,7 @@ namespace VacationManagement.Application.Persistence.Contracts
         Task<VacationRequset> GetVacationRequsetWithDetails(int id);
 
         Task<List<VacationRequset>> GetVacationRequsetWithDetails();
+
+        Task ChangeApprovalStatus(VacationRequset leaveRequest, bool? ApprovalStatus);
     }
 }

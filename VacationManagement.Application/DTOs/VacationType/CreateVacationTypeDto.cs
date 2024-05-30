@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using VacationManagement.Application.DTOs.Common;
 
-namespace VacationManagement.Application.DTOs.VacationAllocation
+namespace VacationManagement.Application.DTOs.VacationType
 {
-    public class CreateVacationAllocationDto
+    public class CreateVacationTypeDto
     {
         public string Name { get; set; }
         public int DefaultDays { get; set; }

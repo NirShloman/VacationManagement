@@ -5,9 +5,10 @@ using VacationManagement.Application.DTOs.Common;
 
 namespace VacationManagement.Application.DTOs.VacationAllocation
 {
-    public class CreateVacationAllocationDto
+    public class UpdateVacationAllocationDto : BaseDto
     {
-        public string Name { get; set; }
-        public int DefaultDays { get; set; }
+        public int NumberOfDays { get; set; }
+        public int VacationTypeId { get; set; }
+        public int Period { get; set; }
     }
 }
