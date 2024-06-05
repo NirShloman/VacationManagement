@@ -8,6 +8,6 @@ namespace VacationManagement.Application.Features.VacationTypes.Requests.Command
 {
     public class CreateVacationTypeCommand : IRequest<int>
     {
-        public VacationTypeDto VacationTypeDto { get; set; }
+        public VacationTypeDto? VacationTypeDto { get; set; }
     }
 }
